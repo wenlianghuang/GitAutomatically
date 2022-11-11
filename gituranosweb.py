@@ -4,6 +4,7 @@ import subprocess
 if __name__ == '__main__':
     
     proc = subprocess.Popen(['git','status'],stdout=subprocess.PIPE)
+    print(proc)
     lines = proc.stdout.readlines()
     for i in range(len(lines)):
         lines[i] = str(lines[i],encoding='utf-8').split('\n')[0]
