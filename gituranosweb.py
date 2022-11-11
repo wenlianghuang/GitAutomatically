@@ -51,5 +51,8 @@ if __name__ == '__main__':
         'git',
         'commit',
         '-m'
-        'commit all the new file'
+        'commit all the new file',
     ]
+    subprocess.run(args,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
+
+    
