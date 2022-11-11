@@ -3,6 +3,7 @@ import ftplib
 from ftppassword import FTPpassword
 
 if __name__ == '__main__':
+    print("Start")
     #server = ftplib.FTP("61.218.64.189","gaiaadmin","3edc$RFV")
     server = ftplib.FTP(FTPpassword.IPName(),FTPpassword.Account(),FTPpassword.Password())
     server.encoding='utf-8'
