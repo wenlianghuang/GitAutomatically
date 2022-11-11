@@ -29,6 +29,7 @@ if __name__ == '__main__':
                 server.retrbinary(f'RETR {allsub[i]}',f.write)
                 f.close()
     print(allsub)
+    print(alllines)
     for i in range(len(allsub)):
         server.delete(allsub[i])
     server.quit()
